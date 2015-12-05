@@ -265,3 +265,402 @@ int main()
 }
 
 ```
+#Switch Statement
+```
+#include <stdio.h>
+
+int main()
+{
+	int score=6;
+	//1 - Single 2- Double
+	//3 - Triple 4 - Boundary 6 - Sixer
+
+	switch(score)
+	{
+	case 1 :
+		printf("Single");
+		break;
+	case 2 :
+		printf("Double");
+		break;
+	default:
+		printf("Something Else");
+		break;
+	case 4:
+		printf("Boundary");
+		break;
+	}
+}
+```
+#Need for an Array 
+```
+#include <stdio.h>
+
+int main()
+{
+	int score1=6;
+	int score2=15;
+	int score3=145;
+	int count = 0;
+
+	if(score1>99)
+		count = count + 1;
+
+	if(score2>99)
+		count = count + 1;
+
+	if(score3>99)
+		count = count + 1;
+
+	printf("Number of Centuries %d",count);
+}
+```
+#Array Basics
+```
+#include <stdio.h>
+int main()
+{
+	int score1=106;
+	int score2=15;
+	int score3=145;
+	int score4=23;
+
+	int scores[10] = {106, 15, 145, 23};
+				  // 0    1   2   3
+	int scoresLength = 4;
+
+	//How to read values?
+	//printf("%d",scores[0]);
+	//How to set values?
+	scores[0] = 108;
+	//How to find length of an array?
+	//What is the default value?
+	//printf("%d",scores[5]);//0
+	//What if I try to bite more than I can Chew?
+	printf("%d",scores[11]);//-1308602447
+
+}
+```
+#For Loop Example
+```
+#include <stdio.h>
+int main()
+{
+
+	int scores[] = {106, 15, 145, 23};
+				  // 0    1   2   3
+	int scoresLength = 4;
+
+	for
+	(
+			int i = 0;//initialization
+			i < scoresLength;//condition
+			i++//increment
+	)
+	{
+		printf(" %d ",scores[i]);
+	}
+
+}
+
+```
+#While Loop Example
+```
+#include <stdio.h>
+int main()
+{
+
+	int scores[] = {106, 15, 145, 23, 235,235,235};
+				  // 0    1   2   3
+	int scoresLength = 7;
+
+	int i = 0;//initialization
+
+	while(i < scoresLength)//condition
+	{//i:7
+		printf(" %d ",scores[i]);
+		i++;//increment
+	}
+	
+	for(int i=0;i<scoresLength;i++)
+	{
+		printf(" %d ",scores[i]);
+	}
+}
+
+```
+#Do while Example
+```
+#include <stdio.h>
+int main()
+{
+
+	int scores[] = {106, 15, 145, 23, 235,235,235};
+				  // 0    1   2   3
+	int scoresLength = 7;
+
+	int i = 0;//initialization
+
+	do
+	{//i:7
+		printf(" %d ",scores[i]);
+		i++;//increment
+	}
+	while(i < scoresLength);//condition
+}
+
+```
+#C Program : Print an Array
+```
+#include <stdio.h>
+
+//returntype name(arguments)
+void printArray(int array[],int length)
+{
+	for(int i=0;i<length;i++)
+	{
+		printf("%d ",array[i]);
+	}
+	printf("\n");
+}
+
+int main()
+{
+	int scoresTeam1[] = {10,101,25,47};
+	int scoresLength = 4;
+	int scoresTeam2[] = {10,100,5,7};
+
+	printArray(scoresTeam1,scoresLength);
+	printArray(scoresTeam2,scoresLength);
+	return 0;
+}
+```
+
+#Program - is number even?
+```
+#include <stdio.h>
+
+//0 - false, anything non-zero - true (1,-1)
+int isEven(int number)
+{
+	if(number%2==0)// 5%2==1 - comparision
+		return 1;
+
+	return 0;
+}
+
+//isEven
+//2 - true
+//3 - false
+int main()
+{
+	printf("1:%d\n",isEven(1));
+	printf("2:%d\n",isEven(2));
+	return 0;
+}
+
+
+
+```
+#Leap Year C Program
+```
+#include <stdio.h>
+
+//0-false 1-true
+int isLeapYear(int year)
+{
+	if(year%400==0)
+		return 1;
+
+	if(year%100==0)
+		return 0;
+
+	if(year%4==0)
+		return 1;
+
+	return 0;
+}
+
+//%4 = Leap YEar
+//1900,2000,2100,2200,2300,2400
+
+int main()
+{
+	printf("2000:%d\n",isLeapYear(2000));
+	printf("1900:%d\n",isLeapYear(1900));
+	printf("1904:%d\n",isLeapYear(1904));
+	printf("1901:%d\n",isLeapYear(1901));
+
+	return 0;
+}
+
+```
+#Sum of first n numbers program
+```
+#include <stdio.h>
+
+//0-false 1-true
+int calculateSumUpto(int n)
+{
+	int result = 0;
+
+	for(int i=1; i<=n; i++)
+	{
+		result = result + i;
+	}
+
+	return result;
+	// 1 to n
+	// result = result + index
+}
+
+// 5 =  1 to 5, 1 + 2 + ... + 5 = 15
+
+int main()
+{
+	printf("upto 5:%d\n",calculateSumUpto(5));
+	printf("upto 10:%d\n",calculateSumUpto(10));
+
+	return 0;
+}
+
+```
+#C Program : Sum of First n even numbers
+```
+#include <stdio.h>
+
+//0-false 1-true
+int calculateSumEvenNumbersUpto(int n)
+{
+	int result = 0;
+
+	for(int i=2; i<=n*2; i = i + 2) //1 to n 2,4,6,8,10
+	{
+		result = result + i; //1 to n  2 * 1 to 2 * n
+	}
+
+	return result;
+	// 1 to n
+	// result = result + index
+}
+
+// 5 =  1 to 5, 1 + 2 + ... + 5 = 15
+
+int main()
+{
+	printf("upto 5:%d\n",calculateSumEvenNumbersUpto(5));
+	printf("upto 10:%d\n",calculateSumEvenNumbersUpto(10));
+
+	return 0;
+}
+
+```
+#Divisors of a number
+```
+#include <stdio.h>
+
+void printDivisors(int n)
+{
+	for(int i=2;i<n;i++){
+		if(n%i ==0){
+			printf("%d\n",i);
+		}
+	}
+}
+
+//12 - 2,3,4,6
+int main()
+{
+	printDivisors(12);
+	return 0;
+}
+
+```
+#Prime Number Program
+```
+#include <stdio.h>
+
+//0-Not prime
+//1 - prime
+// 12 (2, 3,4,...,11)
+int isPrime(int n)
+{
+	for(int i=2;i<n;i++){
+		if(n%i == 0){
+			return 0;
+		}
+	}
+
+	return 1;
+}
+
+//12 - 2,3,4,6
+int main()
+{
+	printf("4 : %d\n",isPrime(4));
+	printf("5 : %d\n",isPrime(5));
+	return 0;
+}
+
+```
+#Number of digits in a number
+```
+#include <stdio.h>
+
+int numberOfDigits(int n) //345
+{
+	int temp = n;//0
+	int count = 0;//3
+	while(temp!=0)
+	{
+		count++;
+		temp = temp/10;
+	}
+	return count;
+
+}
+
+//456 - 3
+//24567 - 5
+
+int main()
+{
+	printf("456: %d\n",numberOfDigits(456));
+	printf("24567: %d\n",numberOfDigits(24567));
+	return 0;
+}
+
+```
+#Sum of Digits Program
+```
+#include <stdio.h>
+
+//345
+//34 - 5
+//3  - 5 + 4
+//0  - 5 + 4 + 3
+
+int sumOfDigits(int n) //345
+{
+	int temp = n;//3
+	int sum = 0;//0 + 5 + 4 + 3
+	while(temp!=0)
+	{
+		sum = sum + temp % 10;
+		temp = temp/10;
+	}
+	return sum;
+
+}
+
+//456 - 15
+//24567 - 24
+
+int main()
+{
+	printf("456: %d\n",sumOfDigits(456));
+	printf("24567: %d\n",sumOfDigits(24567));
+	return 0;
+}
+
+```
