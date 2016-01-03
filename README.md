@@ -17,8 +17,6 @@
   - [Array Basics](#array-basics)
   - [For Loop Example](#for-loop-example)
   - [Do while Example](#do-while-example)
-  - [Print an Array](#c-program-:-print-an-array)
-  - [Is number even?](#program---is-number-even?)
   - [Leap Year](#leap-year-c-program)
   - [Sum of first n numbers program](#sum-of-first-n-numbers-program)
   - [C Program Sum of First n even numbers](#c-program-sum-of-first-n-even-numbers)
