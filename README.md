@@ -1,5 +1,38 @@
 # C Tutorial For Beginners
 
+* [Installing CDT In Eclipse](#installing-cdt-in-eclipse)
+* [Online Editors](#online-editors)
+* [All Code Examples](#all-code-examples)
+  - Hello World(#hello-world)
+  - First Variable(#first-variable)
+  - Two Variables(#two-variables)
+  - Sum of Two Variables(#sum-of-two-variables)
+  - Swap Program(#swap-program)
+  - Floating point variable(#floating-point-variable)
+  - Function(#function)
+  - IF ELSE(#if-else)
+  - Nested If Else(#nested-if-else)
+  - Switch Statement(#switch-statement)
+  - Need for an Array(#need-for-an-array-)
+  - Array Basics(#array-basics)
+  - For Loop Example(#for-loop-example)
+  - Do while Example(#do-while-example)
+  - C Program : Print an Array(#c-program-:-print-an-array)
+  - Program - is number even?(#program---is-number-even?)
+  - Leap Year C Program(#leap-year-c-program)
+  - Sum of first n numbers program(#sum-of-first-n-numbers-program)
+  - C Program Sum of First n even numbers(#c-program-sum-of-first-n-even-numbers)
+  - Divisors of a number(#divisors-of-a-number)
+  - Prime Number Program(#prime-number-program)
+  - Number of digits in a number(#number-of-digits-in-a-number)
+  - Sum of Digits Program(#sum-of-digits-program)
+  - Write to a file(#write-to-a-file)
+  - Read From File(#read-from-file)
+* [About in28Minutes](#about-in28minutes)
+  - [Our Beliefs](#our-beliefs)
+  - [Our Approach](#our-approach)
+  - [Find Us](#useful-links)
+
 ##Installing CDT In Eclipse
 https://www3.ntu.edu.sg/home/ehchua/programming/howto/EclipseCpp_HowTo.html
 
@@ -7,7 +40,7 @@ https://www3.ntu.edu.sg/home/ehchua/programming/howto/EclipseCpp_HowTo.html
  - http://www.tutorialspoint.com/compile_c_online.php
  - https://www.google.co.in/search?q=c+online+compiler
 
-
+#All Code Examples
 #Hello World
 ```
 #include <stdio.h>
@@ -525,7 +558,7 @@ int main()
 }
 
 ```
-#C Program : Sum of First n even numbers
+#C Program Sum of First n even numbers
 ```
 #include <stdio.h>
 
@@ -737,3 +770,5 @@ int main()
 }
 
 ```
+
+
