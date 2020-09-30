@@ -73,7 +73,7 @@ int main()
 
 void printSomething()
 {
-	printf("I will not be executed");
+	printf("I will not be executed");  #Because it is in a void function which was not called.
 }
 
 int main()
