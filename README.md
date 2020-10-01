@@ -214,7 +214,7 @@ int main()
 
 	char ch = 67;//ASCII
 
-	printf("ch:%c",ch);//A
+	printf("ch:%c",ch);//C
 	//d - integer
 	//f - float
 	//c - character
