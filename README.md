@@ -1,5 +1,7 @@
 # C Tutorial For Beginners
 
+The C language was actually created to move the UNIX kernel code from assembly to a higher level language, which would do the same tasks with fewer lines of code.
+
 * [Installing CDT In Eclipse](#installing-cdt-in-eclipse)
 * [Online Editors](#online-editors)
 * [All Code Examples](#all-code-examples)
